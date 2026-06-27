@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Mistake Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f172a">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 id="app-title" class="clickable">JEE Mistake Book</h1>
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">ðŸŒ“</button>
+                <button id="backup-menu-btn" aria-label="Backup Options">âš™ï¸ Backup</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        </main>
+
+    <div id="backup-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Data Management</h3>
+            <div class="modal-buttons">
+                <button id="export-btn" class="btn primary-btn">ðŸ“¥ Export JSON Backup</button>
+                <label for="import-file" class="btn secondary-btn label-btn">ðŸ“¤ Import JSON Backup</label>
+                <input type="file" id="import-file" accept=".json" style="display:none;">
+            </div>
+            <button class="btn close-modal-btn">Close</button>
+        </div>
+    </div>
+
+    <div id="lightbox-modal" class="modal hidden">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-img" src="" alt="Zoomed view">
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
